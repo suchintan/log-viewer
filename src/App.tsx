@@ -18,7 +18,7 @@ interface Hotspot {
   gapMs: number
 }
 
-function App() {
+export function LogViewer() {
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [skipped, setSkipped] = useState(0)
   const [activeSource, setActiveSource] = useState('No file loaded yet')
@@ -456,4 +456,4 @@ function App() {
   )
 }
 
-export default App
+export default LogViewer
